@@ -2,19 +2,39 @@
 <html>
     <head>
         <!-- completa -->
+        <meta charset="UTF-8" />
+        <title>TDIW Problema 1</title>
+        <meta name="author" content="Carlos Delgado Gallardo" />
+        <meta name="description" content="Registrar alumnes engiinyeria" />
+        <meta name="keywords" content="test" />
+        <meta name="robots" content="noindex, nofollow" />
+        <meta name="viewport" content="width=device-width; initial-scale=1.0" />
     </head>
     <body>
         <!-- SECCIÓ 1 - Capçalera -->
         <header>
-            <!-- completa -->
+            <a href="https://www.uab.cat/" target="_blank"> <img src="./img/uab.png" width="250"/> </a>
+            <h1>Escola d'Enginyeria</h1>
+            <h2>Benvinguts a l'Escola d'Enginyeria de la UAB</h2>
+            <hr/>
         </header>
         <!-- SECCIÓ 2 - Llistat dels diferents graus que ofereix l’escola d’enginyeria -->
         <section>
             <header>
-                <h3>Graus disponibles: </h3>
+                <h3>Graus disponibles:</h3>
             </header>
             <ul>
                 <!-- completa -->
+                 <li> <a href="https://www.uab.cat/web/estudiar/llistat-de-graus/informacio-general/enginyeria-informatica-1216708251447.html?param1=1263367146646" target="_blank">  Enginyeria Informàtica  </a> </li>
+                 <ul>
+                    <li>Menció Enginyeria del software</li>
+                    <li>Menció Enginyeria de computadors</li>
+                    <li>Menció Computadors</li>
+                    <li> <a href="./mencions/TI/index.html" target="_blank">Menció Tecnologies de Telecomunicació </a> </li>
+                 </ul>
+                 <li>Enginyeria de Sistemes de Telecomunicació</li>
+                 <li>Enginyeria de Eelctrònica de Telecomunicació</li>
+                 <li>Enginyeria Química</li>
             </ul>
         </section>
         <!-- SECCIÓ 3 - Formulari de registre -->
@@ -25,6 +45,22 @@
             <p> Si us plau facilita'ns les teves dades </p>
             <form method="post" action="">
                 <!-- completa -->
+                Nom Complet: <input type="text" name="Nom Estudiant" id="N_Est"> <br/>
+                Password: <input type="text" name="Id Estudiant" id="Id_Est"/> <br/>
+                Grau: <select name="grau" id="Gr_Est">
+                <option value="EI"> Enginyeria Informàtica </option>
+                <option value="EST"> Enginyeria de Sistemes de Telecomunicació </option>
+                <option value="EET"> Enginyeria de Eelctrònica de Telecomunicació </option>
+                <option value="EQ"> Enginyeria Química </option>
+                </select> <br/> <br/>
+                Tria la menció que t'atreu més: <br/> <br/> <select name="mencio" id="Men_Est">
+                    <option value="MES"> Menció Enginyeria del software </option>
+                    <option value="MEC"> Menció Enginyeria de computadors </option>
+                    <option value="MC"> Menció Computadors </option>
+                    <option value="MTI"> Menció Tecnologies de la Informació </option>
+                    </select> <br/>
+                <input type="reset" value="Neteja">
+                <input type="submit" value="Registra-me">
             </form>
             <hr />
         </section>
@@ -35,11 +71,39 @@
             </header>
             <table border="1">
                 <!-- completa -->
+                <tr>
+                    <th colspan="2"> Escola d'Enginyeria </th>
+                    <th colspan="2"> Ciències</th>
+                </tr>
+                <tr>
+                    <td>Enginyeria Informàtica</td>
+                    <td>300</td>
+                    <td>Matemàtiques</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>Enginyeria de Sistemes de Telecomunicació</td>
+                    <td>150</td>
+                    <td rowspan="2">Física</td>
+                    <td rowspan="2">100</td>
+                </tr>
+                <tr>
+                    <td>Enginyeria Química</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>Total:</td>
+                    <td>750</td>
+                    <td>Total:</td>
+                    <td>300</td>
+                </tr>
             </table>
         </section>
         <!-- SECCIÓ 5 - Peu de pàgina -->
         <footer>
             <!-- completa -->
+             <img src="./img/campus-e.png" width="250"> <br/>
+             <b>© Universitat Autònoma de Barcelona. Campus d'Excel·lència</b>
         </footer>
     </body>
 </html>
