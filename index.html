@@ -4,7 +4,9 @@
         <meta charset="utf-8"/>
         <title> UAB/Enginyeria </title>
         <!-- completa -->
-    </head>
+         <link rel="stylesheet" href="./css/uab.css"></link>
+         <script src="./js/funcions.js"></script>
+        </head>
     <body>
         <!-- SECCIÓ 1 - Capçalera -->
         <header>
@@ -34,12 +36,12 @@
         </section>
         <!-- SECCIÓ 3 - Formulari de registre -->
         <section>
-            <header> <!-- completa -->
+            <header class="fancy"> <!-- completa -->
                 <h3>Registra't com a alumne en un grau: </h3>
             </header>
             <p> Si us plau facilita'ns les teves dades </p>
             <!-- completa -->
-            <form method="post" action=""> <!-- completa -->
+            <form method="post" action="" onsubmit="return confirmaRegistre()" id="formulari"> <!-- completa -->
                 Nom complet: <input type="text" name="nom" /><br />
                 Password: <input type="password" name="clau" /><br />
                 Grau:
@@ -63,7 +65,7 @@
             <hr />
         </section>
         <!-- SECCIÓ 4 -  Estadístiques de matriculació per grau -->
-        <section> <!-- completa -->
+        <section class="statistics"> <!-- completa -->
             <header>
                 <h3>Estadístiques de matriculació per graus</h3>
             </header>

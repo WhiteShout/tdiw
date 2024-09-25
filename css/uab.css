@@ -1,1 +1,43 @@
 /* completa */
+h1 {
+    color: darkblue;
+}
+
+h1, h3 {
+    font-style: italic;
+}
+
+header p {
+    font-style: courier;
+}
+
+.fancy {
+    font-style: times;
+}
+
+header.fancy {
+    color: magenta;
+}
+
+.statistics{}
+
+section.statistics header h3 {
+    color: red;
+}
+
+table, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+p.important {
+    font-weight: bold;
+    font-size: 30px;
+    background-color: aqua;
+    width: 16.3%;
+}
+
+img {
+    float: left;
+    padding-left: 10px;
+}
